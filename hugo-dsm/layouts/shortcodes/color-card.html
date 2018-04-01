@@ -9,7 +9,15 @@
     <div class="dsm-app__color-card__name">&nbsp;</div>
     {{ end }}
 
-    <div class="dsm-app__color-card__code">{{ .Get "color" }}</div>
+    <div class="dsm-app__color-card__code">
+        
+        <span>{{ .Get "color" }}</span>
+
+        <span><script>document.write(colorcolor("{{ .Get "color" }}", "rgb"));</script></span>
+
+        <span><script>document.write(colorcolor("{{ .Get "color" }}", "hsl"));</script></span>
+    
+    </div>
 
 </div>
 {{ end }}

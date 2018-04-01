@@ -12,8 +12,13 @@
         border-radius: .25rem .25rem 0 0;
     }
 
-    &__name,
-    &__code{
+    &__name{
         padding: .5rem;
+        font-weight: 700;
+    }
+
+    &__code span{
+        display: block;
+        padding: .2rem;
     }
 }

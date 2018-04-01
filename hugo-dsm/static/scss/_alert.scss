@@ -1,0 +1,39 @@
+.#{$root}__alert{
+    position: relative;
+    display: block;
+    margin: .5rem 0 1rem;
+    padding: 1rem 1rem 1rem 6rem;
+    border: 1px solid $c-blue;
+    border-radius: 4px;
+
+    &__label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5rem;
+        height: 100%;
+        padding: 1rem;
+        border-radius: 4px 0 0 4px;
+        background-color: $c-blue;
+        color: $c-white;
+        text-align: center;
+        font-weight: 700;
+        content: "";
+    }
+
+    &.#{$root}__alert--do{
+        border-color: $c-green;
+
+        .#{$root}__alert__label{
+            background-color: $c-green;
+        }
+    }
+
+    &.#{$root}__alert--dont{
+        border-color: $c-red;
+
+        .#{$root}__alert__label{
+            background-color: $c-red;
+        }
+    }
+}
