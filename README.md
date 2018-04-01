@@ -43,5 +43,10 @@ Google-font allow you to render a preview of the fonts used in your design syste
 
 Example: `{{<google-font font="IBM Plex Sans Condensed" sizes="400,700,300,400italic,700italic,300italic">}}`
 
+## Demo
+A demo site for my tests is available here: [https://cocky-liskov-2d8547.netlify.com/](https://cocky-liskov-2d8547.netlify.com/)
+
+Thanks to Netlify !
+
 ## About this theme
 This theme is currently in beta. Help and comments are really appreciated !
