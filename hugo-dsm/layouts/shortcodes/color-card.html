@@ -1,0 +1,15 @@
+{{ if .Get "color" }}
+<div class="dsm-app__color-card">
+
+    <div class="dsm-app__color-card__color" style="background-color: {{ .Get "color" }};"></div>
+
+    {{ if .Get "name" }}
+    <div class="dsm-app__color-card__name">{{ .Get "name" }}</div>
+    {{ else }}
+    <div class="dsm-app__color-card__name">&nbsp;</div>
+    {{ end }}
+
+    <div class="dsm-app__color-card__code">{{ .Get "color" }}</div>
+
+</div>
+{{ end }}

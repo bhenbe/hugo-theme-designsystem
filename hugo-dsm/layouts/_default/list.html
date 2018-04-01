@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+
+{{ partial "sidenav.html" . }}
+
+<main class="dsm-app__content">
+
+    <div class="dsm-app__content-wrapper">
+
+    {{ .Content }}
+
+    </div>
+
+    <aside>
+
+        <h2 class="dsm-app__sub-heading">in this section</h2>
+
+        <ul class="dsm-app__sub-pages">
+        {{ range .Data.Pages }}
+            <li>
+                <a href="{{.Permalink}}">
+                    {{.Title}}
+                    <span>{{ .Params.description }}</span>
+                </a>
+            </li>
+        {{ end }}
+        </ul>
+
+    </aside>
+
+</main>
+
+{{ partial "footer.html" . }}

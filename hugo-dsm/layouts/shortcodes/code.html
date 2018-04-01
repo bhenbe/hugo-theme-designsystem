@@ -1,0 +1,3 @@
+<pre class="dsm-app__code">
+    <code {{ if .Get "language" }}class="{{ .Get "language" }}"{{ end }}>{{ replace .Inner "<" "&lt;" | safeHTML }}</code>
+</pre>

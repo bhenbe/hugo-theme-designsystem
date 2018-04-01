@@ -1,0 +1,17 @@
+{{ if .Get "font" }}
+<link href="https://fonts.googleapis.com/css?family={{ replace (.Get "font") " " "+" | safeURL }}{{ if .Get "sizes" }}:{{ .Get "sizes" }}{{ end }}" rel="stylesheet">
+<style type="text/css">
+.dsm-app__google-font--font-{{ .Get "font" | urlize }} {
+    font-family: '{{ .Get "font" }}';
+}
+</style> 
+<div class="dsm-app__google-font-preview dsm-app__google-font-font-{{ .Get "font" | urlize }} ">
+{{ if .Get "sizes" }}
+    {{ range $size := (split (.Get "sizes") ",") }}
+    <p class="dsm-app__google-font-preview--{{ $size }}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    {{ end }}
+{{ else }}
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+{{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,19 @@
+.#{$root}__color-card{
+    float: left;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 1rem 1rem 0;
+    border: 1px solid $border-color;
+    text-align: center;
+    border-radius: .25rem;
+
+    &__color{
+        height: 120px;
+        border-radius: .25rem .25rem 0 0;
+    }
+
+    &__name,
+    &__code{
+        padding: .5rem;
+    }
+}

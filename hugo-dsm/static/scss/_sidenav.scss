@@ -1,0 +1,23 @@
+.#{$root}__sidenav{
+    ul{
+        list-style: none;
+        padding-left: 0;
+        ul{
+            padding-left: 1.25rem;
+            font-size: .9em;
+        }
+    }
+    li{
+        padding: .2rem 0;
+    }
+    a{
+        display: block;
+        padding: .2rem;
+        border-radius: 2px;
+        text-decoration: none;
+    }
+    .active > a{
+        color: $c-white;
+        background-color: $link-color;
+    }
+}

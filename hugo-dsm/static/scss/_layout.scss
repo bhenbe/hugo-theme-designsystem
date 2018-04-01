@@ -1,0 +1,43 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a{
+    color: $link-color;
+    text-decoration: underline;
+}
+
+.#{$root}{
+    display: grid;
+    grid-template-columns: minmax(240px, auto) 1fr;
+    grid-template-rows: minmax(100vh, auto);
+    grid-gap: 1rem;
+
+    & > *{
+        padding: 1rem;
+    }
+
+    &__sidenav{
+        grid-column: 1;
+        grid-row: 1;
+        background-color: hsl(245, 68%, 96%);
+    }
+
+    &__content{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    &__content-wrapper{
+        width: 100%;
+    }
+}

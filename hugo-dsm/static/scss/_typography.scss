@@ -1,0 +1,70 @@
+html,
+body{
+    font-family: $font-family;
+    color: $font-color;
+    font-size: 1rem;
+}
+
+.#{$root}__heading{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-bottom: 1px solid $border-color;
+}
+
+.#{$root}__sub-heading{
+    margin-top: 2em;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-bottom: 1px solid $border-color;
+}
+
+//draft wip ready deleted
+.#{$root}__label{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    line-height: 16px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: $c-blue;
+    color: $c-white;
+    text-transform: lowercase;
+    &.#{$root}__label-wip{
+        background-color: $c-orange;
+    }
+    &.#{$root}__label-ready{
+        background-color: $c-green;
+    }
+    &.#{$root}__label-deleted{
+        background-color: $c-red;
+    }
+}
+
+.#{$root}__google-font-preview{
+    border: 1px solid $border-color;
+    padding: 1rem;
+
+    & > p{
+        margin: 0;
+        padding-bottom: 1em;
+        font-size: 2em;
+
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+
+    $sizes: ( 100, 200, 300, 400, 500, 600, 700, 800, 900 );
+    @each $size in $sizes {
+        .#{$root}__google-font-preview--#{$size} {
+            font-weight: $size;
+        }
+        .#{$root}__google-font-preview--#{$size}italic {
+            font-weight: $size;
+            font-style: italic;
+        }
+    }
+}
