@@ -5,6 +5,16 @@ body{
     font-size: 1rem;
 }
 
+p{
+    max-width: 66ch;
+    line-height: 1.4;
+}
+
+a{
+    color: $link-color;
+    text-decoration: underline;
+}
+
 .#{$root}__heading{
     font-size: 2em;
     text-transform: uppercase;
