@@ -29,15 +29,43 @@ html {
     &__sidenav{
         grid-column: 1;
         grid-row: 2;
-        background-color: $nav-color;
+        background-color: $c-nav;
     }
 
     &__content-wrapper{
         width: 100%;
+
+        @media(min-width:90rem){
+            padding: 0 20%;
+        }
+    }
+
+    &__content-related{
+        margin-top: 60px;
+
+        &:before,
+        &:after{
+            display: table;
+            content:"";
+            clear: both;
+        }
+    }
+
+    &__content-infos{
+        margin-top: 60px;
+        font-size: .75em;
+        text-align: right;
+
+        &:before,
+        &:after{
+            display: table;
+            content:"";
+            clear: both;
+        }
     }
 
     @media(min-width: 42.5rem){
-        grid-template-columns: minmax(240px, auto) 1fr;
+        grid-template-columns: minmax(240px, 320px) 1fr;
         grid-template-rows: minmax(100vh, auto);
 
         &__sidenav{

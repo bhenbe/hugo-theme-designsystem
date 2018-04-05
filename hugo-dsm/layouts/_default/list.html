@@ -6,26 +6,30 @@
 
     <div class="dsm-app__content-wrapper">
 
-    {{ .Content }}
+        {{ .Content }}
 
-    </div>
+        <aside class="dsm-app__content-related">
 
-    <aside>
+            <h2 class="dsm-app__sub-heading">in this section</h2>
 
-        <h2 class="dsm-app__sub-heading">in this section</h2>
-
-        <ul class="dsm-app__sub-pages">
-        {{ range .Data.Pages }}
-            <li>
+            <div class="dsm-app__sub-pages">
+            {{ range .Data.Pages }}
                 <a href="{{.Permalink}}">
                     {{.Title}}
                     <span>{{ .Params.description }}</span>
                 </a>
-            </li>
-        {{ end }}
-        </ul>
+            {{ end }}
+            </div>
 
-    </aside>
+        </aside>
+
+        <aside class="dsm-app__content-infos">
+
+            <p>Last update: {{ .Lastmod }}</p>
+
+        </aside>
+
+    </div>
 
 </main>
 

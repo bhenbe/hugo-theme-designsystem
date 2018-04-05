@@ -3,10 +3,10 @@
 $root: 'dsm-app';
 
 $font-family: 'Open Sans', sans-serif;
-$font-color: hsl(242, 28%, 26%);
-$link-color: hsl(242, 28%, 48%);
-$nav-color: hsl(242, 28%, 90%);
-$border-color: hsl(242, 28%, 94%);
+$c-font-base: hsl(242, 28%, 26%);
+$c-link: hsl(242, 28%, 48%);
+$c-nav: hsl(242, 28%, 90%);
+$c-border: hsl(242, 28%, 94%);
 
 $c-white: hsl(0, 0%, 100%);
 $c-blue: hsl(198, 66%, 60%);

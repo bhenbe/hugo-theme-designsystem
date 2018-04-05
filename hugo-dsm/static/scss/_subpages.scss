@@ -6,23 +6,26 @@
     margin: 0 -1rem;
     padding: 0 0;
 
-    & > li{
-        border: 1px solid $border-color;
+    & > a{
+        border: 1px solid $c-border;
         margin: 0 1rem 1rem;
         padding: 1rem;
         width: 100%;
         max-width: 320px;
-
-        a{
-            font-size: 1.2em;
-            font-weight: 700;
-            text-decoration: none;
-        }
+        font-size: 1.2em;
+        font-weight: 700;
+        text-decoration: none;
 
         span{
             display: block;
             font-size: 1rem;
             font-weight: 400;
+        }
+
+        &:hover{
+            background-color: $c-link;
+            color: $c-white;
+            border-color: $c-link;
         }
     }
 }

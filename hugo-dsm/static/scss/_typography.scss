@@ -1,17 +1,16 @@
 html,
 body{
     font-family: $font-family;
-    color: $font-color;
+    color: $c-font-base;
     font-size: 1rem;
 }
 
 p{
-    max-width: 66ch;
     line-height: 1.4;
 }
 
 a{
-    color: $link-color;
+    color: $c-link;
     text-decoration: underline;
 }
 
@@ -19,7 +18,7 @@ a{
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 300;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $c-border;
 }
 
 .#{$root}__sub-heading{
@@ -27,7 +26,7 @@ a{
     font-size: 1.6em;
     text-transform: uppercase;
     font-weight: 300;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $c-border;
 }
 
 //draft wip ready deleted
@@ -54,7 +53,7 @@ a{
 }
 
 .#{$root}__google-font-preview{
-    border: 1px solid $border-color;
+    border: 1px solid $c-border;
     padding: 1rem;
 
     & > p{

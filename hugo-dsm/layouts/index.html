@@ -6,7 +6,13 @@
 
     <div class="dsm-app__content-wrapper">
 
-    {{ .Content }}
+        {{ .Content }}
+
+        <aside class="dsm-app__content-infos">
+
+            <p>Last update: {{ .Lastmod }}</p>
+
+        </aside>
 
     </div>
 
